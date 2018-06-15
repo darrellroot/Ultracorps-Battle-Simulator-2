@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F9D474120D43AEC007C377E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */; };
+		2F9D474620D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */; };
+		2F9D474720D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */; };
+		2F9D474820D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D474420D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift */; };
+		2F9D474920D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D474520D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift */; };
 		2FA7685920B36B0B006EA163 /* units.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7685820B36B0B006EA163 /* units.swift */; };
 		2FA7685B20B36EF0006EA163 /* fleets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA7685A20B36EF0006EA163 /* fleets.swift */; };
 		2FF0B27420ADF70A0036F9EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B27320ADF70A0036F9EA /* AppDelegate.swift */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F9D474020D43AEC007C377E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataTaskForce+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataTaskForce+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2F9D474420D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFleet+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2F9D474520D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFleet+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2FA7685820B36B0B006EA163 /* units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = units.swift; sourceTree = "<group>"; };
 		2FA7685A20B36EF0006EA163 /* fleets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fleets.swift; sourceTree = "<group>"; };
 		2FF0B27020ADF70A0036F9EA /* Ultracorps Battle Simulator 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ultracorps Battle Simulator 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +91,11 @@
 				2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */,
 				2FA7685820B36B0B006EA163 /* units.swift */,
 				2FA7685A20B36EF0006EA163 /* fleets.swift */,
+				2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */,
+				2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */,
+				2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */,
+				2F9D474420D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift */,
+				2F9D474520D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift */,
 			);
 			path = "Ultracorps Battle Simulator 2";
 			sourceTree = "<group>";
@@ -157,14 +172,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF0B29020AE41340036F9EA /* NetworkBattleViewController.swift in Sources */,
+				2F9D474720D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift in Sources */,
 				2FA7685920B36B0B006EA163 /* units.swift in Sources */,
 				2FF0B27820ADF70A0036F9EA /* SelectFleetViewController.swift in Sources */,
+				2F9D474820D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift in Sources */,
 				2FF0B27420ADF70A0036F9EA /* AppDelegate.swift in Sources */,
 				2FF0B28E20AE403C0036F9EA /* NetworkOpponentViewController.swift in Sources */,
 				2FA7685B20B36EF0006EA163 /* fleets.swift in Sources */,
 				2FF0B28A20AE31350036F9EA /* EditFleetViewController.swift in Sources */,
+				2F9D474120D43AEC007C377E /* Model.xcdatamodeld in Sources */,
 				2FF0B27620ADF70A0036F9EA /* WelcomeViewController.swift in Sources */,
+				2F9D474620D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift in Sources */,
 				2FF0B28C20AE31FC0036F9EA /* SoloBattleViewController.swift in Sources */,
+				2F9D474920D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +382,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2F9D474020D43AEC007C377E /* Model.xcdatamodel */,
+			);
+			currentVersion = 2F9D474020D43AEC007C377E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2FF0B26820ADF70A0036F9EA /* Project object */;
 }
