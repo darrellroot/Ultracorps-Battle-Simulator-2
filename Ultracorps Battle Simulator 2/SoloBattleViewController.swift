@@ -85,8 +85,8 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             fleets[currentAttackingFleet].startBattle()
             fleets[currentDefendingFleet].startBattle()
         }
-        let attackHits = fleets[currentAttackingFleet].attack()
-        let defendHits = fleets[currentDefendingFleet].attack()
+        let attackHits = fleets[currentAttackingFleet].attack(battleRound: battleRound)
+        let defendHits = fleets[currentDefendingFleet].attack(battleRound: battleRound)
         if debug { print("attackHits \(attackHits) defendHits \(defendHits)") }
         fleets[currentAttackingFleet].impact(hits:defendHits)
         fleets[currentDefendingFleet].impact(hits:attackHits)
@@ -164,8 +164,8 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             // tag of 102 is for attacking cell label
             let cell = tableView.dequeueReusableCell(withIdentifier: "AttackFleetCell", for: indexPath)
             let label = cell.viewWithTag(102) as! UILabel
-            let (name,quantity,survivor) = thisFleet.getNonZeroRow(thisRow)
-            label.text = "\(name) Initial \(quantity) Current \(survivor)"
+            let (name,quantity,survivor,xfactorString) = thisFleet.getNonZeroRow(thisRow)
+            label.text = "\(name) Initial \(quantity) Current \(survivor) \(xfactorString)"
             //label.text = "\(units[thisRow].name) initial \(thisFleet.quantities[thisRow]) current \(thisFleet.survivors[thisRow])"
             return cell
         } else {
@@ -174,8 +174,8 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             // tag of 103 is for defending cell label
             let cell = tableView.dequeueReusableCell(withIdentifier: "DefendFleetCell", for: indexPath)
             let label = cell.viewWithTag(103) as! UILabel
-            let (name,quantity,survivor) = thisFleet.getNonZeroRow(thisRow)
-            label.text = "\(name) Initial \(quantity) Current \(survivor)"
+            let (name,quantity,survivor,xfactorString) = thisFleet.getNonZeroRow(thisRow)
+            label.text = "\(name) Initial \(quantity) Current \(survivor) \(xfactorString)"
             //label.text = "\(units[thisRow].name) initial \(thisFleet.quantities[thisRow]) current \(thisFleet.survivors[thisRow])"
             return cell
         }

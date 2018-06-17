@@ -22,6 +22,7 @@ protocol Unit {
 
 let units: [Unit] = [Crawler() as Unit, Runway() as Unit, Eliminator() as Unit, Megabot() as Unit, Incinerator() as Unit, Raider() as Unit, Instigator() as Unit, Corvette() as Unit, Boron() as Unit, Hurax() as Unit, Thirus() as Unit, Fighter() as Unit, Giganto() as Unit, Rover() as Unit, Wrecker() as Unit, Battleship() as Unit, Nozama() as Unit, TkBike() as Unit, CrOrg() as Unit, Infinita() as Unit, Sentinel() as Unit, XironMediumCruiser() as Unit, Scout() as Unit, Mauler() as Unit, CrOrgII() as Unit, TkTank() as Unit, OrnMoonGun() as Unit, Suicide() as Unit, TkPsiHauler() as Unit, BoronV2() as Unit, BoronV3() as Unit, CROrgIIv2() as Unit, CROrgIIv3() as Unit, CROrgIIv4() as Unit, Annihilator() as Unit, BattleshipV2() as Unit, BattleStation() as Unit, TkBikeV2() as Unit, ZenrinMonk() as Unit, ZenrinFighter() as Unit, ZenrinWarrior() as Unit, ZenrinMaster() as Unit, MegaBotV2() as Unit, MegaBotV3() as Unit, MegaBotV4() as Unit, Shuttle() as Unit, WarMek() as Unit, NozamaQueen() as Unit, XironHeavyCruiserV2() as Unit, Scuttler() as Unit ]
 
+//0
 struct Crawler: Unit {
     let OF = 25
     let DF = 90
@@ -34,6 +35,7 @@ struct Crawler: Unit {
     let FP = 2.24
 }
 
+//1
 struct Runway: Unit {
     let OF = 40
     let DF = 98
@@ -46,6 +48,7 @@ struct Runway: Unit {
     let FP = 22.36
 }
 
+//2
 struct Eliminator: Unit {
     let OF = 50
     let DF = 37
@@ -58,6 +61,7 @@ struct Eliminator: Unit {
     let FP = 0.89
 }
 
+//3
 struct Megabot: Unit {
     let OF = 75
     let DF = 95
@@ -70,6 +74,7 @@ struct Megabot: Unit {
     let FP = 8.66
 }
 
+//4
 struct Incinerator: Unit {
     let OF = 15
     let DF = 96
@@ -82,6 +87,7 @@ struct Incinerator: Unit {
     let FP = 6.12
 }
 
+//5
 struct Raider: Unit {
     let FP = 0.56
     let OF = 25
@@ -94,6 +100,7 @@ struct Raider: Unit {
     let name = "X-5 Raider"
 }
 
+//6
 struct Instigator: Unit {
     let FP = 0.68
     let OF = 35
@@ -106,6 +113,7 @@ struct Instigator: Unit {
     let name = "X-6 Instigator"
 }
 
+//7
 struct Corvette: Unit {
     let FP = 0.85
     let OF = 40
@@ -118,6 +126,7 @@ struct Corvette: Unit {
     let name = "X-7 Corvette"
 }
 
+//8
 struct Boron: Unit {
     let FP = 1.22
     let OF = 30
@@ -130,6 +139,7 @@ struct Boron: Unit {
     let name = "Boron Recon Buggy"
 }
 
+//9
 struct Hurax: Unit {
     let FP = 3.16
     let OF = 60
@@ -142,6 +152,7 @@ struct Hurax: Unit {
     let name = "Hurax Stealth Fighter"
 }
 
+//10
 struct Thirus: Unit {
     let FP = 3.16
     let OF = 50
@@ -154,6 +165,7 @@ struct Thirus: Unit {
     let name = "Thirus All-Purpose Saucer"
 }
 
+//11
 struct Fighter: Unit {
     let FP = 0.62
     let OF = 30
@@ -166,6 +178,7 @@ struct Fighter: Unit {
     let name = "Super Space Fighter"
 }
 
+//12
 struct Giganto: Unit {
     let FP = 20.12
     let OF = 90
@@ -178,6 +191,7 @@ struct Giganto: Unit {
     let name = "Giganto Planet Attacker"
 }
 
+//13
 struct Rover: Unit {
     let FP = 0.5
     let OF = 20
@@ -190,6 +204,7 @@ struct Rover: Unit {
     let name = "All-Terrain Rover"
 }
 
+//14
 struct Wrecker: Unit {
     let FP = 34.64
     let OF = 40
@@ -202,6 +217,7 @@ struct Wrecker: Unit {
     let name = "R-Class Wrecker"
 }
 
+//15
 struct Battleship: Unit {
     let FP = 13.23
     let OF = 70
@@ -214,6 +230,7 @@ struct Battleship: Unit {
     let name = "N-Class Battleship"
 }
 
+//16
 struct Nozama: Unit {
     let FP = 0.64
     let OF = 17
@@ -226,6 +243,7 @@ struct Nozama: Unit {
     let name = "Nozama Fighter"
 }
 
+//17
 struct TkBike: Unit {
     let FP = 3.74
     let OF = 70
@@ -238,6 +256,7 @@ struct TkBike: Unit {
     let name = "TK Bike"
 }
 
+//18
 struct CrOrg: Unit {
     let FP = 23.09
     let OF = 80
@@ -250,6 +269,7 @@ struct CrOrg: Unit {
     let name = "C.R. Org"
 }
 
+//19
 struct Infinita: Unit {
     let FP = 50.99
     let OF = 65
@@ -262,6 +282,7 @@ struct Infinita: Unit {
     let name = "Infinita"
 }
 
+//20
 struct Sentinel: Unit {
     let FP = 0.46
     let OF = 15
@@ -274,6 +295,7 @@ struct Sentinel: Unit {
     let name = "Sentinel of Garsasso"
 }
 
+//21
 struct XironMediumCruiser: Unit {
     let FP = 10.95
     let OF = 50
@@ -286,6 +308,7 @@ struct XironMediumCruiser: Unit {
     let name = "Xiron Medium Cruiser"
 }
 
+//22
 struct Scout: Unit {
     let FP = 0.91
     let OF = 50
@@ -298,6 +321,7 @@ struct Scout: Unit {
     let name = "ATO-2 Scout"
 }
 
+//23
 struct Mauler: Unit {
     let FP = 1.7
     let OF = 50
@@ -310,6 +334,7 @@ struct Mauler: Unit {
     let name = "A-7 Mauler"
 }
 
+//24
 struct CrOrgII: Unit {
     let FP = 11.34
     let OF = 60
@@ -322,6 +347,7 @@ struct CrOrgII: Unit {
     let name = "C.R. Org II"
 }
 
+//25
 struct TkTank: Unit {
     let FP = 1.76
     let OF = 65
@@ -334,6 +360,7 @@ struct TkTank: Unit {
     let name = "TK Tank"
 }
 
+//26
 struct OrnMoonGun: Unit {
     let FP = 47.96
     let OF = 100
@@ -346,6 +373,7 @@ struct OrnMoonGun: Unit {
     let name = "Orn Moon Gun"
 }
 
+//27
 struct Suicide: Unit {
     let FP = 4.26
     let OF = 90
@@ -358,6 +386,7 @@ struct Suicide: Unit {
     let name = "E-Class Suicide Fighter"
 }
 
+//28
 struct TkPsiHauler: Unit {
     let FP = 1.29
     let OF = 10
@@ -370,6 +399,7 @@ struct TkPsiHauler: Unit {
     let name = "TK Psi Hauler"
 }
 
+//29
 struct BoronV2: Unit {
     let FP = 1.65
     let OF = 30
@@ -382,6 +412,7 @@ struct BoronV2: Unit {
     let name = "Boron Recon Buggy v2"
 }
 
+//30
 struct BoronV3: Unit {
     let FP = 3.87
     let OF = 60
@@ -394,6 +425,7 @@ struct BoronV3: Unit {
     let name = "Boron Recon Buggy v3"
 }
 
+//31
 struct CROrgIIv2: Unit {
     let FP = 15.49
     let OF = 80
@@ -406,6 +438,7 @@ struct CROrgIIv2: Unit {
     let name = "C.R. Org II v2"
 }
 
+//32
 struct CROrgIIv3: Unit {
     let FP = 23.8
     let OF = 85
@@ -418,6 +451,7 @@ struct CROrgIIv3: Unit {
     let name = "C.R. Org II v3"
 }
 
+//33
 struct CROrgIIv4: Unit {
     let FP = 35.18
     let OF = 99
@@ -430,6 +464,7 @@ struct CROrgIIv4: Unit {
     let name = "C. R. Org II v4"
 }
 
+//34
 struct Annihilator: Unit {
     let FP = 3.46
     let OF = 60

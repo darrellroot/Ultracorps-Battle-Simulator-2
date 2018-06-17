@@ -29,7 +29,7 @@ class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         let label = cell.viewWithTag(300) as! UILabel
         label.text = "unable to fill"
         if let fleetToEdit = fleetToEdit {
-            let (unitName, unitQty, _) = fleets[fleetToEdit].getNonZeroRow(indexPath.item)
+            let (unitName, unitQty, _, _) = fleets[fleetToEdit].getNonZeroRow(indexPath.item)
             label.text = unitName + " " + String(unitQty)
             //label.text = units[indexPath.item].name + String(describing:fleets[fleetToEdit].quantities[indexPath.item])
          }
@@ -59,6 +59,7 @@ class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         }
     }*/
     @IBAction func doneButton(_ sender: UIButton) {
+        saveData()
         dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {

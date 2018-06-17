@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F02A84920D578E9003AC7AB /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2F02A84820D578E9003AC7AB /* README.rtf */; };
 		2F9D474120D43AEC007C377E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */; };
 		2F9D474620D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */; };
 		2F9D474720D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F02A84820D578E9003AC7AB /* README.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
 		2F9D474020D43AEC007C377E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataTaskForce+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataTaskForce+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */,
 				2F9D474420D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift */,
 				2F9D474520D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift */,
+				2F02A84820D578E9003AC7AB /* README.rtf */,
 			);
 			path = "Ultracorps Battle Simulator 2";
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				2FF0B28020ADF70A0036F9EA /* LaunchScreen.storyboard in Resources */,
 				2FF0B27D20ADF70A0036F9EA /* Assets.xcassets in Resources */,
+				2F02A84920D578E9003AC7AB /* README.rtf in Resources */,
 				2FF0B27B20ADF70A0036F9EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
