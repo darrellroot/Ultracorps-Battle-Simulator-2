@@ -105,6 +105,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func readData() {
         if debug {print("readData")}
         let request = NSFetchRequest<CoreDataFleet>(entityName: "CoreDataFleet")
+        let sortDescriptor = NSSortDescriptor(key: "name",ascending: true )
+        request.sortDescriptors = [sortDescriptor]
         if let coreDataFleets = try? managedContext.fetch(request) {
             for coreDataFleet in coreDataFleets {
                 var newFleet = fleet()

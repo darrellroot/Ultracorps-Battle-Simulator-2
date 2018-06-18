@@ -56,6 +56,9 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             alert.addAction(UIAlertAction(title: "ok", style: .default, handler: nil))
             self.present(alert, animated: true)
         } else {
+            fleets[currentAttackingFleet!].startBattle()
+            fleets[currentDefendingFleet!].startBattle()
+            battleRound = 0
             fightARoundButton.setTitle("Start Battle!", for: .normal)
         }
         updateUI()
