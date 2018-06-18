@@ -20,7 +20,9 @@ protocol Unit {
     var FP: Double {get}
 }
 
-let units: [Unit] = [Crawler() as Unit, Runway() as Unit, Eliminator() as Unit, Megabot() as Unit, Incinerator() as Unit, Raider() as Unit, Instigator() as Unit, Corvette() as Unit, Boron() as Unit, Hurax() as Unit, Thirus() as Unit, Fighter() as Unit, Giganto() as Unit, Rover() as Unit, Wrecker() as Unit, Battleship() as Unit, Nozama() as Unit, TkBike() as Unit, CrOrg() as Unit, Infinita() as Unit, Sentinel() as Unit, XironMediumCruiser() as Unit, Scout() as Unit, Mauler() as Unit, CrOrgII() as Unit, TkTank() as Unit, OrnMoonGun() as Unit, Suicide() as Unit, TkPsiHauler() as Unit, BoronV2() as Unit, BoronV3() as Unit, CROrgIIv2() as Unit, CROrgIIv3() as Unit, CROrgIIv4() as Unit, Annihilator() as Unit, BattleshipV2() as Unit, BattleStation() as Unit, TkBikeV2() as Unit, ZenrinMonk() as Unit, ZenrinFighter() as Unit, ZenrinWarrior() as Unit, ZenrinMaster() as Unit, MegaBotV2() as Unit, MegaBotV3() as Unit, MegaBotV4() as Unit, Shuttle() as Unit, WarMek() as Unit, NozamaQueen() as Unit, XironHeavyCruiserV2() as Unit, Scuttler() as Unit ]
+//let units: [Unit] = [Crawler() as Unit, Runway() as Unit, Eliminator() as Unit, Megabot() as Unit, Incinerator() as Unit, Raider() as Unit, Instigator() as Unit, Corvette() as Unit, Boron() as Unit, Hurax() as Unit, Thirus() as Unit, Fighter() as Unit, Giganto() as Unit, Rover() as Unit, Wrecker() as Unit, Battleship() as Unit, Nozama() as Unit, TkBike() as Unit, CrOrg() as Unit, Infinita() as Unit, Sentinel() as Unit, XironMediumCruiser() as Unit, Scout() as Unit, Mauler() as Unit, CrOrgII() as Unit, TkTank() as Unit, OrnMoonGun() as Unit, Suicide() as Unit, TkPsiHauler() as Unit, BoronV2() as Unit, BoronV3() as Unit, CROrgIIv2() as Unit, CROrgIIv3() as Unit, CROrgIIv4() as Unit, Annihilator() as Unit, BattleshipV2() as Unit, BattleStation() as Unit, TkBikeV2() as Unit, ZenrinMonk() as Unit, ZenrinFighter() as Unit, ZenrinWarrior() as Unit, ZenrinMaster() as Unit, MegaBotV2() as Unit, MegaBotV3() as Unit, MegaBotV4() as Unit, Shuttle() as Unit, WarMek() as Unit, NozamaQueen() as Unit, XironHeavyCruiserV2() as Unit, Scuttler() as Unit ]
+let units: [Unit] = [Mauler() as Unit,Rover() as Unit,Crawler() as Unit,Scout() as Unit,Boron() as Unit,BoronV2() as Unit, BoronV3() as Unit,CrOrg() as Unit,CrOrgII() as Unit,CROrgIIv2() as Unit, CROrgIIv3() as Unit, CROrgIIv4() as Unit, Suicide() as Unit,Giganto() as Unit,Runway() as Unit, Eliminator() as Unit,Annihilator() as Unit ,Hurax() as Unit,Infinita() as Unit,Megabot() as Unit,MegaBotV2() as Unit, MegaBotV3() as Unit, MegaBotV4() as Unit,Battleship() as Unit,BattleshipV2() as Unit,BattleStation() as Unit,Nozama() as Unit,NozamaQueen() as Unit,OrnMoonGun() as Unit,Incinerator() as Unit,Wrecker() as Unit,Scuttler() as Unit,Sentinel() as Unit,Fighter() as Unit,  Thirus() as Unit,ThirusOrn() as Unit,TkBike() as Unit, TkBikeV2() as Unit,  TkPsiHauler() as Unit,TkTank() as Unit,  WarMek() as Unit ,           Raider() as Unit,Instigator() as Unit, Corvette() as Unit,Shuttle() as Unit,XironMediumCruiser() as Unit,XironHeavyCruiserV2() as Unit ,ZenrinMonk() as Unit, ZenrinFighter() as Unit, ZenrinWarrior() as Unit, ZenrinMaster() as Unit,                ]
+
 
 //0
 struct Crawler: Unit {
@@ -162,7 +164,19 @@ struct Thirus: Unit {
     let price = 150
     let CPX = 300
     let unitID = 35
-    let name = "Thirus All-Purpose Saucer"
+    let name = "Thirus Saucer not in Orn Fleet"
+}
+
+struct ThirusOrn: Unit {
+    let FP = 3.16
+    let OF = 50
+    let DF = 80
+    let AT = 4
+    let CA = 150
+    let price = 150
+    let CPX = 300
+    let unitID = 335
+    let name = "Thirus Saucer in Orn Fleet"
 }
 
 //11

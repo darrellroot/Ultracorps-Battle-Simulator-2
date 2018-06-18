@@ -76,6 +76,7 @@ class SelectFleetViewController: UIViewController, UIPickerViewDataSource, UIPic
                 currentDefendingFleet = currentDefendingFleet! - 1
             }
         }
+        saveData()
         updateUI()
     }
     override func viewDidLoad() {

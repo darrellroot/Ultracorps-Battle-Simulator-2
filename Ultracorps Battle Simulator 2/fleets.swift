@@ -183,16 +183,18 @@ struct fleet {
             return answer
         }
     }
+    var unitIDtoIndex: [Int: Int] = [:]
 
     
     init() {
-        for _ in 0..<units.count {
+        for count in 0..<units.count {
             quantities.append(0)
             survivors.append(0)
             XAT.append(0)
             XDF.append(0)
             XOF.append(0)
             xfactorString.append("")
+            unitIDtoIndex.updateValue(count, forKey: units[count].unitID)
         }
     }
     mutating func startBattle() {
@@ -220,21 +222,20 @@ struct fleet {
                     self.xfactorString[count] += "DF=1"
                 }
             case 30,31,32,88: // X-5Raider with space runway in same area
-                if self.survivors[count] > 0 && self.survivors[1] > 0 && units[1].unitID == 26 {
+                if self.survivors[count] > 0 && self.survivors[unitIDtoIndex[26]!] > 0 {
                     self.XAT[count] = units[count].AT+1
                     self.XDF[count] = units[count].DF+15
                     self.xfactorString[count] += "AT+1,DF+15"
                 }
-            case 35:    //Thirus saucer
-                if self.survivors[count] > 0 && self.survivors[30] > 0 { //If thirus saucers in same fleet
-                    if units[30].unitID != 60 { //doublecheck that it is thirus saucer
-                        print("XFACTOR ERROR unit30 unitID is \(units[30].unitID)")
-                        self.xfactorString[count] += "XFACERR"
-                    } else {
-                        //Thirus saucer in same fleet as recon buggy v3
-                        self.XAT[count] = 8
-                        self.xfactorString[count] += "AT+4"
-                    }
+            case 35,335:    //Thirus saucer
+                if self.survivors[count] > 0 && self.survivors[unitIDtoIndex[60]!] > 0 { //If thirus saucers in same fleet as boron v3
+                    self.XAT[count] = 8
+                    self.xfactorString[count] = "AT+4"
+                }
+                if units[count].unitID == 335 {
+                    self.XDF[count] = 90
+                    if self.XAT[count] == 8 { self.xfactorString[count] += ","}
+                    self.xfactorString[count] += "DF+10"
                 }
             case 42:   //Nozama fighter
                 switch self.survivors[count] {
