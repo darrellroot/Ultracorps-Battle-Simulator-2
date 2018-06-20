@@ -45,6 +45,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-2P-lVP">
+                                <rect key="frame" x="30" y="430" width="964" height="162.5"/>
+                                <mutableString key="text">Battle Simulator Instructions:  1) On "select fleet" screen, choose "Add New Fleet" then "Edit Fleet" 2) On "edit fleet" screen, set your "fleet name" and hit return 3) On "edit fleet" screen, choose each unit type and type in quantity 4) Repeat 1-3 to create at least two fleets to fight 5) On "select fleet" screen, select your "attacking" and "defending" fleets 6) On the "Solo Battle" screen click "start battle".  Continue clicking "fight a round" until victory. </mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://ultracorps.sjgames.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n4w-HQ-Ol9">
                                 <rect key="frame" x="30" y="350" width="964" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -55,13 +62,6 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyy-2P-lVP">
-                                <rect key="frame" x="30" y="430" width="964" height="162.5"/>
-                                <string key="text">Battle Simulator Instructions:  1) On "select fleet" screen, choose "Add New Fleet" then "Edit Fleet" 2) On "edit fleet" screen, set your "fleet name" and hit return 3) On "edit fleet" screen, choose each unit type and type in quantity 4) Repeat 1-3 to create at least two fleets to fight 5) On "select fleet" screen, select your "attacking" and "defending" fleets 6) On the "Solo Battle" screen click "start battle".  Continue clicking "fight a round" until victory. </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -229,7 +229,7 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="301-1w-4ki">
-                                                            <rect key="frame" x="0.0" y="0.0" width="354" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="482" height="44"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>

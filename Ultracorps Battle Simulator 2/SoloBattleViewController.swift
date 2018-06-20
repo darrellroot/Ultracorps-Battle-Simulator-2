@@ -87,6 +87,7 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
         if battleRound == 0 {
             fleets[currentAttackingFleet].startBattle()
             fleets[currentDefendingFleet].startBattle()
+            fightARoundButton.setTitle("Fight a round!", for: .normal)
         }
         let attackHits = fleets[currentAttackingFleet].attack(battleRound: battleRound)
         let defendHits = fleets[currentDefendingFleet].attack(battleRound: battleRound)
