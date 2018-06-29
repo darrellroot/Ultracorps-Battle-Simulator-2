@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320.3125"/>
+            <point key="canvasLocation" x="-676" y="359"/>
         </scene>
         <!--Select Fleet-->
         <scene sceneID="wg7-f3-ORb">
@@ -212,7 +212,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="359.375"/>
+            <point key="canvasLocation" x="15" y="369"/>
         </scene>
         <!--Edit Fleet-->
         <scene sceneID="Clg-UA-7MC">
@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9K-7b-HgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.57393850658855" y="1263.28125"/>
+            <point key="canvasLocation" x="677" y="-472"/>
         </scene>
         <!--Solo Battle-->
         <scene sceneID="apH-BH-BjR">
@@ -829,7 +829,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzV-fO-isn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.96778916544656" y="1014.8437499999999"/>
+            <point key="canvasLocation" x="689" y="373"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -848,7 +848,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-387" y="-502"/>
         </scene>
     </scenes>
     <resources>
