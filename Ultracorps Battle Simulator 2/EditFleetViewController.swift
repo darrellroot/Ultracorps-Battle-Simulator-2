@@ -23,6 +23,7 @@ class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     @IBOutlet weak var currentFP: UILabel!
     @IBOutlet weak var currentCST: UILabel!
     @IBOutlet weak var currentCPX: UILabel!
+    let device = UIDevice.current.userInterfaceIdiom
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EditFleetCell", for: indexPath)
@@ -64,6 +65,7 @@ class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPicke
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        if device != .pad { tableView.rowHeight = 24 }
         if let fleetNumber = fleetToEdit {
             if fleetNumber == fleets.count {
                 // create new fleet
@@ -107,8 +109,8 @@ class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         if let fleetNumber = fleetToEdit {
             fleetNameField.text = fleets[fleetNumber].name
             currentFP.text = String(fleets[fleetNumber].totalFP)
-            currentCST.text = String(fleets[fleetNumber].totalCST)
-            currentCPX.text = String(fleets[fleetNumber].totalCPX)
+            currentCST?.text = String(fleets[fleetNumber].totalCST)
+            currentCPX?.text = String(fleets[fleetNumber].totalCPX)
         }
         tableView.reloadData()
     }

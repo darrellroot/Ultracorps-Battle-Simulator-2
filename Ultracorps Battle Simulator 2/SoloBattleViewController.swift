@@ -22,6 +22,8 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var attackingFleetTable: UITableView!
     @IBOutlet weak var defendingFleetTable: UITableView!
     
+    @IBOutlet weak var iPhoneTable: UITableView!
+    
     @IBOutlet weak var roundLabel: UILabel!
     
     @IBOutlet weak var attackFleetStartCST: UILabel!
@@ -45,6 +47,8 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let cellNib = UINib(nibName: "battleTableCell", bundle: nil)
+        iPhoneTable?.register(cellNib, forCellReuseIdentifier: "battleTableCell")
         updateUI()
         // Do any additional setup after loading the view.
     }
@@ -59,7 +63,7 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             fleets[currentAttackingFleet!].startBattle()
             fleets[currentDefendingFleet!].startBattle()
             battleRound = 0
-            fightARoundButton.setTitle("Start Battle!", for: .normal)
+            fightARoundButton?.setTitle("Start Battle!", for: .normal)
         }
         updateUI()
     }
@@ -120,43 +124,58 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
         if debug { print("current defending fleet \(String(describing: currentDefendingFleet))") }
 
         if let attackingFleetNumber = currentAttackingFleet {
-            attackingFleetNameLabel.text = fleets[attackingFleetNumber].name
-            attackFleetStartCST.text = String(fleets[attackingFleetNumber].totalCST)
-            attackFleetStartCPX.text = String(fleets[attackingFleetNumber].totalCPX)
-            attackFleetStartFP.text = String(fleets[attackingFleetNumber].totalFP)
-            attackFleetCurrentCST.text = String(fleets[attackingFleetNumber].survivingCST)
-            attackFleetCurrentCPX.text = String(fleets[attackingFleetNumber].survivingCPX)
-            attackFleetCurrentFP.text = String(fleets[attackingFleetNumber].survivingFP)
+            attackingFleetNameLabel?.text = fleets[attackingFleetNumber].name
+            attackFleetStartCST?.text = String(fleets[attackingFleetNumber].totalCST)
+            attackFleetStartCPX?.text = String(fleets[attackingFleetNumber].totalCPX)
+            attackFleetStartFP?.text = String(fleets[attackingFleetNumber].totalFP)
+            attackFleetCurrentCST?.text = String(fleets[attackingFleetNumber].survivingCST)
+            attackFleetCurrentCPX?.text = String(fleets[attackingFleetNumber].survivingCPX)
+            attackFleetCurrentFP?.text = String(fleets[attackingFleetNumber].survivingFP)
         } else {
-            attackingFleetNameLabel.text = "None"
+            attackingFleetNameLabel?.text = "None"
         }
         if let defendingFleetNumber = currentDefendingFleet {
-            defendingFleetNameLabel.text = fleets[defendingFleetNumber].name
-            defendFleetStartCST.text = String(fleets[defendingFleetNumber].totalCST)
-            defendFleetStartCPX.text = String(fleets[defendingFleetNumber].totalCPX)
-            defendFleetStartFP.text = String(fleets[defendingFleetNumber].totalFP)
-            defendFleetCurrentCST.text = String(fleets[defendingFleetNumber].survivingCST)
-            defendFleetCurrentCPX.text = String(fleets[defendingFleetNumber].survivingCPX)
-            defendFleetCurrentFP.text = String(fleets[defendingFleetNumber].survivingFP)
+            defendingFleetNameLabel?.text = fleets[defendingFleetNumber].name
+            defendFleetStartCST?.text = String(fleets[defendingFleetNumber].totalCST)
+            defendFleetStartCPX?.text = String(fleets[defendingFleetNumber].totalCPX)
+            defendFleetStartFP?.text = String(fleets[defendingFleetNumber].totalFP)
+            defendFleetCurrentCST?.text = String(fleets[defendingFleetNumber].survivingCST)
+            defendFleetCurrentCPX?.text = String(fleets[defendingFleetNumber].survivingCPX)
+            defendFleetCurrentFP?.text = String(fleets[defendingFleetNumber].survivingFP)
         } else {
-            defendingFleetNameLabel.text = "None"
+            defendingFleetNameLabel?.text = "None"
         }
-        roundLabel.text = String(battleRound)
-        attackingFleetTable.reloadData()
-        defendingFleetTable.reloadData()
+        roundLabel?.text = String(battleRound)
+        attackingFleetTable?.reloadData()
+        defendingFleetTable?.reloadData()
+        iPhoneTable?.reloadData()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if tableView.tag == 100 {
+        if tableView.tag == 100 {  //attacking table on ipad
             guard let currentAttackingFleet = currentAttackingFleet else {return 0}
             return fleets[currentAttackingFleet].nonzeroRows
             //return units.count
             // tag of 100 is for attacking table view
-        } else {
+        } else if tableView.tag == 101 {  //defending table on ipad
             guard let currentDefendingFleet = currentDefendingFleet else {return 0}
             return fleets[currentDefendingFleet].nonzeroRows
             //return units.count
             // tag of 101 is for defending table view
+        } else if tableView.tag == 200 { //iphone combined table
+            guard let currentAttackingFleet = currentAttackingFleet else {return 0}
+            guard let currentDefendingFleet = currentDefendingFleet else {return 0}
+            var total = 0
+            for loop in 0..<units.count {
+                if fleets[currentAttackingFleet].survivors[loop] > 0 || fleets[currentDefendingFleet].survivors[loop] > 0 {
+                    total = total + 1
+                }
+            }
+            return total + 1 //adding row for FP
+            //return max(fleets[currentAttackingFleet].nonzeroRows, fleets[currentDefendingFleet].nonzeroRows)
+        } else {
+            print("should not get here tableview tag \(tableView.tag)")
+            return 0
         }
     }
     
@@ -172,7 +191,7 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             label.text = "\(name) Initial \(quantity) Current \(survivor) \(xfactorString)"
             //label.text = "\(units[thisRow].name) initial \(thisFleet.quantities[thisRow]) current \(thisFleet.survivors[thisRow])"
             return cell
-        } else {
+        } else if tableView.tag == 101 {
             let thisFleet = fleets[currentDefendingFleet!]
             // tag of 101 is for defending table view
             // tag of 103 is for defending cell label
@@ -181,6 +200,40 @@ class SoloBattleViewController: UIViewController, UITableViewDataSource, UITable
             let (name,quantity,survivor,xfactorString) = thisFleet.getNonZeroRow(thisRow)
             label.text = "\(name) Initial \(quantity) Current \(survivor) \(xfactorString)"
             //label.text = "\(units[thisRow].name) initial \(thisFleet.quantities[thisRow]) current \(thisFleet.survivors[thisRow])"
+            return cell
+        } else { //iphone table tag is 200
+            let attackFleet = fleets[currentAttackingFleet!]
+            let defendFleet = fleets[currentDefendingFleet!]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "battleTableCell",for: indexPath) as! battleTableCell
+            var nonzeroRow = 0
+            if indexPath.row == 0 {
+                cell.centerLabel.text = "FP"
+                cell.leftLabel.text = "\(Int(round(attackFleet.survivingFP)))"
+                cell.rightLabel.text = "\(Int(round(defendFleet.survivingFP)))"
+                return cell
+            }
+            for loop in 0..<units.count {
+                if fleets[currentAttackingFleet!].survivors[loop] > 0 || fleets[currentDefendingFleet!].survivors[loop] > 0 {
+                    if nonzeroRow + 1 == indexPath.row {
+                        var attxfacstring = attackFleet.xfactorString[loop]
+                        var defxfacstring = defendFleet.xfactorString[loop]
+                        if attackFleet.survivors[loop] == 0 {
+                            attxfacstring = ""
+                        }
+                        if defendFleet.survivors[loop] == 0 {
+                            defxfacstring = ""
+                        }
+                        cell.centerLabel.text = attxfacstring + " " + units[loop].name + " " + defxfacstring
+                        cell.leftLabel.text = "\(attackFleet.survivors[loop])"
+                        cell.rightLabel.text = "\(defendFleet.survivors[loop])"
+                        return cell
+                    }
+                    nonzeroRow = nonzeroRow + 1
+                }
+            }
+            cell.centerLabel.text = "error"
+            cell.leftLabel.text = "0"
+            cell.rightLabel.text = "0"
             return cell
         }
     }

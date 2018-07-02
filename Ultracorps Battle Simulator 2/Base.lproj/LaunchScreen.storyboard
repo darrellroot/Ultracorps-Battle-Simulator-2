@@ -1,103 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eTP-3y-7C1">
-    <device id="ipad9_7" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kDz-CC-bfS">
+    <device id="ipad10_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Welcome-->
-        <scene sceneID="oCa-L4-XcJ">
+        <scene sceneID="siN-JN-D4y">
             <objects>
-                <viewController id="eTP-3y-7C1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="djQ-N8-L2a">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                <viewController id="kDz-CC-bfS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gp9-JL-eeY">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="UltraCorps Battle Simulator" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="exr-Xc-pnO">
-                                <rect key="frame" x="300" y="45" width="424" height="43"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Darrell Root" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjF-dW-lse">
-                                <rect key="frame" x="30" y="108" width="964" height="17"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Darrell Root" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIW-bv-FBN">
+                                <rect key="frame" x="10" y="83" width="1092" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2K-Qe-V8h">
-                                <rect key="frame" x="20" y="175" width="984" height="86"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Jf-T4-sEI">
+                                <rect key="frame" x="10" y="110" width="1092" height="86"/>
                                 <string key="text">UltraCorps is copyright © 1998-2002, 2005-2018 by Steve Jackson Games.  UltraCorps is a trademark of Steve Jackson Games, which reserves all rights.  This program was created and distributed by permission of Steve Jackson Games. Conquest is Job One!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full UltraCorps game and rules are available at:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdZ-Ya-K14">
-                                <rect key="frame" x="270.5" y="350" width="483" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVE-a9-yhM">
+                                <rect key="frame" x="10" y="335" width="1092" height="122"/>
+                                <string key="text">1) Select Fleet-&gt;Add New Fleet-&gt;Edit Fleet 2) Set "fleet name" and hit return 3) Choose each unit type, quantity, hit return 4) Repeat 1-3: Create two fleets to fight 5) Select "attacking" and "defending" fleets 6) Solo battle -&gt;start battle </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="http://ultracorps.sjgames.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n8t-Ky-jM7">
-                                <rect key="frame" x="30" y="409" width="964" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-Gm-QEl">
+                                <rect key="frame" x="10" y="226" width="1092" height="29"/>
+                                <string key="text" base64-UTF8="YES">
+Rm9yIHF1ZXN0aW9ucyBvciBpc3N1ZXMgd2l0aCB0aGlzIGJhdHRsZSBzaW11bGF0b3IsA2VtYWlsIGNj
+aWVlbWVyaXR1c0BnbWFpbC5jb20
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="UltraCorps Battle Simulator" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-nm-CKE">
+                                <rect key="frame" x="10" y="30" width="1092" height="43"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="http://ultracorps.sjgames.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4up-NV-fSN">
+                                <rect key="frame" x="10" y="265" width="1092" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="ACQ-eJ-Ny0"/>
+                                    <constraint firstAttribute="height" constant="40" id="x92-nz-WjO"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                </variation>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="heY-ae-FwB">
-                                <rect key="frame" x="30" y="489" width="964" height="162.5"/>
-                                <mutableString key="text">Battle Simulator Instructions:  1) On "select fleet" screen, choose "Add New Fleet" then "Edit Fleet" 2) On "edit fleet" screen, set your "fleet name" and hit return 3) On "edit fleet" screen, choose each unit type and type in quantity 4) Repeat 1-3 to create at least two fleets to fight 5) On "select fleet" screen, select your "attacking" and "defending" fleets 6) On the "Solo Battle" screen click "start battle".  Continue clicking "fight a round" until victory. </mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For questions or issues with this battle simulator, email ccieemeritus@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeL-a7-BDN">
-                                <rect key="frame" x="100" y="291" width="824" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="T2K-Qe-V8h" firstAttribute="leading" secondItem="Erz-Bq-oZD" secondAttribute="leading" constant="20" id="09f-ru-ZgA"/>
-                            <constraint firstItem="exr-Xc-pnO" firstAttribute="leading" secondItem="Erz-Bq-oZD" secondAttribute="leading" constant="300" id="0zS-vH-XQf"/>
-                            <constraint firstItem="IjF-dW-lse" firstAttribute="top" secondItem="exr-Xc-pnO" secondAttribute="bottom" constant="20" id="9Qd-sr-E8O"/>
-                            <constraint firstItem="zeL-a7-BDN" firstAttribute="top" secondItem="T2K-Qe-V8h" secondAttribute="bottom" constant="30" id="AxY-nX-eKQ"/>
-                            <constraint firstItem="Erz-Bq-oZD" firstAttribute="trailing" secondItem="exr-Xc-pnO" secondAttribute="trailing" constant="300" id="Ixl-JK-9sr"/>
-                            <constraint firstItem="EdZ-Ya-K14" firstAttribute="top" secondItem="zeL-a7-BDN" secondAttribute="bottom" constant="30" id="JZc-3b-eCN"/>
-                            <constraint firstItem="Erz-Bq-oZD" firstAttribute="trailing" secondItem="T2K-Qe-V8h" secondAttribute="trailing" constant="20" id="Juy-Qb-kMG"/>
-                            <constraint firstItem="T2K-Qe-V8h" firstAttribute="top" secondItem="IjF-dW-lse" secondAttribute="bottom" constant="50" id="KmE-6b-AtA"/>
-                            <constraint firstItem="Erz-Bq-oZD" firstAttribute="trailing" secondItem="heY-ae-FwB" secondAttribute="trailing" constant="30" id="M7I-H6-TYa"/>
-                            <constraint firstItem="exr-Xc-pnO" firstAttribute="top" secondItem="Erz-Bq-oZD" secondAttribute="top" constant="25" id="Nzv-Dk-BTr"/>
-                            <constraint firstItem="EdZ-Ya-K14" firstAttribute="centerX" secondItem="T2K-Qe-V8h" secondAttribute="centerX" id="PoV-zi-Hhp"/>
-                            <constraint firstItem="n8t-Ky-jM7" firstAttribute="top" secondItem="EdZ-Ya-K14" secondAttribute="bottom" constant="30" id="Voy-vD-69o"/>
-                            <constraint firstItem="IjF-dW-lse" firstAttribute="leading" secondItem="Erz-Bq-oZD" secondAttribute="leading" constant="30" id="XwK-MJ-GZA"/>
-                            <constraint firstItem="Erz-Bq-oZD" firstAttribute="trailing" secondItem="n8t-Ky-jM7" secondAttribute="trailing" constant="30" id="YyN-tn-x26"/>
-                            <constraint firstItem="n8t-Ky-jM7" firstAttribute="leading" secondItem="Erz-Bq-oZD" secondAttribute="leading" constant="30" id="hF6-F9-G4g"/>
-                            <constraint firstItem="zeL-a7-BDN" firstAttribute="centerX" secondItem="T2K-Qe-V8h" secondAttribute="centerX" id="hkX-WP-qc3"/>
-                            <constraint firstItem="heY-ae-FwB" firstAttribute="top" secondItem="n8t-Ky-jM7" secondAttribute="bottom" constant="30" id="mag-MZ-q7f"/>
-                            <constraint firstItem="Erz-Bq-oZD" firstAttribute="trailing" secondItem="IjF-dW-lse" secondAttribute="trailing" constant="30" id="pt7-GN-5tb"/>
-                            <constraint firstItem="heY-ae-FwB" firstAttribute="leading" secondItem="Erz-Bq-oZD" secondAttribute="leading" constant="30" id="w8O-yO-KXO"/>
-                            <constraint firstItem="n8t-Ky-jM7" firstAttribute="centerX" secondItem="EdZ-Ya-K14" secondAttribute="centerX" id="wYO-OC-Fxg"/>
+                            <constraint firstItem="xKj-nm-CKE" firstAttribute="top" secondItem="liV-n5-s2L" secondAttribute="top" constant="10" id="3wZ-bj-xfs"/>
+                            <constraint firstItem="4up-NV-fSN" firstAttribute="leading" secondItem="gp9-JL-eeY" secondAttribute="leading" constant="10" id="74y-rV-gUB"/>
+                            <constraint firstItem="liV-n5-s2L" firstAttribute="trailing" secondItem="dVE-a9-yhM" secondAttribute="trailing" constant="10" id="7NZ-Vq-ch0"/>
+                            <constraint firstItem="4up-NV-fSN" firstAttribute="top" secondItem="Pw5-Gm-QEl" secondAttribute="bottom" constant="10" id="G44-rR-FeE"/>
+                            <constraint firstItem="RIW-bv-FBN" firstAttribute="leading" secondItem="liV-n5-s2L" secondAttribute="leading" constant="10" id="GmC-71-7ud"/>
+                            <constraint firstItem="xKj-nm-CKE" firstAttribute="leading" secondItem="liV-n5-s2L" secondAttribute="leading" constant="10" id="HOW-tj-bG4"/>
+                            <constraint firstItem="3Jf-T4-sEI" firstAttribute="top" secondItem="RIW-bv-FBN" secondAttribute="bottom" constant="10" id="REZ-UI-vYq"/>
+                            <constraint firstItem="dVE-a9-yhM" firstAttribute="leading" secondItem="liV-n5-s2L" secondAttribute="leading" constant="10" id="URv-O9-Rlz"/>
+                            <constraint firstItem="liV-n5-s2L" firstAttribute="trailing" secondItem="xKj-nm-CKE" secondAttribute="trailing" constant="10" id="VbB-EF-NB4"/>
+                            <constraint firstItem="3Jf-T4-sEI" firstAttribute="leading" secondItem="liV-n5-s2L" secondAttribute="leading" constant="10" id="Xf0-wz-iHY"/>
+                            <constraint firstItem="Pw5-Gm-QEl" firstAttribute="top" secondItem="3Jf-T4-sEI" secondAttribute="bottom" constant="10" id="ay0-dD-XsZ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="RIW-bv-FBN" firstAttribute="top" secondItem="xKj-nm-CKE" secondAttribute="bottom" constant="10" id="edq-2k-Z99"/>
+                            <constraint firstItem="Pw5-Gm-QEl" firstAttribute="leading" secondItem="gp9-JL-eeY" secondAttribute="leading" constant="10" id="etF-EO-y66"/>
+                            <constraint firstItem="dVE-a9-yhM" firstAttribute="top" secondItem="4up-NV-fSN" secondAttribute="bottom" constant="10" id="g5G-iM-433">
+                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="4up-NV-fSN" secondAttribute="trailing" constant="10" id="gXC-Pe-tPS"/>
+                            <constraint firstItem="liV-n5-s2L" firstAttribute="trailing" secondItem="3Jf-T4-sEI" secondAttribute="trailing" constant="10" id="iQ5-5J-F3O"/>
+                            <constraint firstAttribute="trailing" secondItem="Pw5-Gm-QEl" secondAttribute="trailing" constant="10" id="lO2-zE-FAS"/>
+                            <constraint firstItem="liV-n5-s2L" firstAttribute="trailing" secondItem="RIW-bv-FBN" secondAttribute="trailing" constant="10" id="s8P-Fx-21L"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Erz-Bq-oZD"/>
+                        <viewLayoutGuide key="safeArea" id="liV-n5-s2L"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Welcome" image="first" id="apJ-Ud-IHv"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="first" id="Ay0-4S-ybr"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iDi-Vd-OFT" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFq-g6-BP1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320.3125"/>
+            <point key="canvasLocation" x="-486.15107913669067" y="195.68345323741008"/>
         </scene>
     </scenes>
     <resources>

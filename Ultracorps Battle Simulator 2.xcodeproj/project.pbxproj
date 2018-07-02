@@ -25,6 +25,9 @@
 		2FF0B28C20AE31FC0036F9EA /* SoloBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */; };
 		2FF0B28E20AE403C0036F9EA /* NetworkOpponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */; };
 		2FF0B29020AE41340036F9EA /* NetworkBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */; };
+		2FF72D7720E6C0B800A800D9 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF72D7520E6C0B800A800D9 /* iPhone.storyboard */; };
+		2FFC5C1F20E817F300F65C32 /* battleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC5C1E20E817F300F65C32 /* battleTableCell.xib */; };
+		2FFC5C2120E8209000F65C32 /* battleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFC5C2020E8209000F65C32 /* battleTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloBattleViewController.swift; sourceTree = "<group>"; };
 		2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOpponentViewController.swift; sourceTree = "<group>"; };
 		2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBattleViewController.swift; sourceTree = "<group>"; };
+		2FF72D7620E6C0B800A800D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Ultracorps Battle Simulator 2/Base.lproj/iPhone.storyboard"; sourceTree = "<group>"; };
+		2FFC5C1E20E817F300F65C32 /* battleTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = battleTableCell.xib; sourceTree = "<group>"; };
+		2FFC5C2020E8209000F65C32 /* battleTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,24 +87,27 @@
 			isa = PBXGroup;
 			children = (
 				2FF0B27320ADF70A0036F9EA /* AppDelegate.swift */,
-				2FF0B27520ADF70A0036F9EA /* WelcomeViewController.swift */,
-				2FF0B27720ADF70A0036F9EA /* SelectFleetViewController.swift */,
-				2FF0B27920ADF70A0036F9EA /* Main.storyboard */,
 				2FF0B27C20ADF70A0036F9EA /* Assets.xcassets */,
-				2FF0B27E20ADF70A0036F9EA /* LaunchScreen.storyboard */,
-				2FF0B28120ADF70A0036F9EA /* Info.plist */,
-				2FF0B28920AE31350036F9EA /* EditFleetViewController.swift */,
-				2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */,
-				2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */,
-				2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */,
-				2FA7685820B36B0B006EA163 /* units.swift */,
-				2FA7685A20B36EF0006EA163 /* fleets.swift */,
-				2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */,
-				2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */,
-				2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */,
+				2FFC5C2020E8209000F65C32 /* battleTableCell.swift */,
+				2FFC5C1E20E817F300F65C32 /* battleTableCell.xib */,
 				2F9D474420D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift */,
 				2F9D474520D43CAE007C377E /* CoreDataFleet+CoreDataProperties.swift */,
+				2F9D474220D43CAE007C377E /* CoreDataTaskForce+CoreDataClass.swift */,
+				2F9D474320D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift */,
+				2FF0B28920AE31350036F9EA /* EditFleetViewController.swift */,
+				2FA7685A20B36EF0006EA163 /* fleets.swift */,
+				2FF0B28120ADF70A0036F9EA /* Info.plist */,
+				2FF72D7520E6C0B800A800D9 /* iPhone.storyboard */,
+				2FF0B27E20ADF70A0036F9EA /* LaunchScreen.storyboard */,
+				2FF0B27920ADF70A0036F9EA /* Main.storyboard */,
+				2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */,
+				2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */,
+				2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */,
 				2F02A84820D578E9003AC7AB /* README.rtf */,
+				2FF0B27720ADF70A0036F9EA /* SelectFleetViewController.swift */,
+				2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */,
+				2FA7685820B36B0B006EA163 /* units.swift */,
+				2FF0B27520ADF70A0036F9EA /* WelcomeViewController.swift */,
 			);
 			path = "Ultracorps Battle Simulator 2";
 			sourceTree = "<group>";
@@ -161,10 +170,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FFC5C1F20E817F300F65C32 /* battleTableCell.xib in Resources */,
 				2FF0B28020ADF70A0036F9EA /* LaunchScreen.storyboard in Resources */,
 				2FF0B27D20ADF70A0036F9EA /* Assets.xcassets in Resources */,
 				2F02A84920D578E9003AC7AB /* README.rtf in Resources */,
 				2FF0B27B20ADF70A0036F9EA /* Main.storyboard in Resources */,
+				2FF72D7720E6C0B800A800D9 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FF0B29020AE41340036F9EA /* NetworkBattleViewController.swift in Sources */,
+				2FFC5C2120E8209000F65C32 /* battleTableCell.swift in Sources */,
 				2F9D474720D43CAE007C377E /* CoreDataTaskForce+CoreDataProperties.swift in Sources */,
 				2FA7685920B36B0B006EA163 /* units.swift in Sources */,
 				2FF0B27820ADF70A0036F9EA /* SelectFleetViewController.swift in Sources */,
@@ -209,6 +221,14 @@
 				2FF0B27F20ADF70A0036F9EA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2FF72D7520E6C0B800A800D9 /* iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FF72D7620E6C0B800A800D9 /* Base */,
+			);
+			name = iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -343,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darrellroot.Ultracorps-Battle-Simulator-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -362,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.darrellroot.Ultracorps-Battle-Simulator-2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -48,6 +48,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        var storyboard: UIStoryboard!
+        let device = UIDevice.current.userInterfaceIdiom
+        if device == .pad {
+            storyboard = UIStoryboard(name: "Main", bundle: nil)
+        } else {
+            storyboard = UIStoryboard(name: "iPhone", bundle: nil)
+        }
+        window?.rootViewController = storyboard.instantiateInitialViewController()
+        window?.makeKeyAndVisible()
         managedContext = persistentContainer.viewContext
         readData()
         return true
