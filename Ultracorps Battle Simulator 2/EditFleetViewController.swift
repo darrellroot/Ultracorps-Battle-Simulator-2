@@ -10,6 +10,9 @@ import UIKit
 
 class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
     
+    var keyboardAdjusted = false
+    var lastKeyboardOffset: CGFloat = 0.0
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return units.count
         if let fleetToEdit = fleetToEdit {
@@ -76,11 +79,52 @@ class EditFleetViewController: UIViewController, UIPickerViewDataSource, UIPicke
         fleetNameField.delegate = self
         newQuantityField.delegate = self
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        
         updateUI()
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self,selector: #selector(keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self,selector: #selector(keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self,name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self,name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    @objc func keyboardWillShow(_ notification: NSNotification) {
+        if keyboardAdjusted == false && newQuantityField.isFirstResponder {
+            lastKeyboardOffset = getKeyboardHeight(notification: notification)
+            view.frame.origin.y -= lastKeyboardOffset
+                keyboardAdjusted = true
+        }
+    }
+    @objc func keyboardWillHide(_ notification: NSNotification) {
+        if keyboardAdjusted == true {
+            view.frame.origin.y += lastKeyboardOffset
+            keyboardAdjusted = false
+        }
+    }
+    func getKeyboardHeight(notification: NSNotification) -> CGFloat {
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue
+        return keyboardSize.cgRectValue.height
+    }
+    
+    @objc func hideKeyboard() {
+        for textField in self.view.subviews where textField is UITextField {
+            if textField.isFirstResponder {
+                _ = textFieldShouldReturn(textField as! UITextField)
+            }
+        }
+        //view.endEditing(true)
+    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("textfieldshould return")
         if textField.tag == 800 {
             if let fleetNumber = fleetToEdit {
                 if let newName = fleetNameField.text {
