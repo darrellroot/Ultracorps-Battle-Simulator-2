@@ -23,7 +23,6 @@
 		2FF0B28020ADF70A0036F9EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF0B27E20ADF70A0036F9EA /* LaunchScreen.storyboard */; };
 		2FF0B28A20AE31350036F9EA /* EditFleetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28920AE31350036F9EA /* EditFleetViewController.swift */; };
 		2FF0B28C20AE31FC0036F9EA /* SoloBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */; };
-		2FF0B28E20AE403C0036F9EA /* NetworkOpponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */; };
 		2FF0B29020AE41340036F9EA /* NetworkBattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */; };
 		2FF72D7720E6C0B800A800D9 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF72D7520E6C0B800A800D9 /* iPhone.storyboard */; };
 		2FFC5C1F20E817F300F65C32 /* battleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FFC5C1E20E817F300F65C32 /* battleTableCell.xib */; };
@@ -49,7 +48,6 @@
 		2FF0B28120ADF70A0036F9EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FF0B28920AE31350036F9EA /* EditFleetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFleetViewController.swift; sourceTree = "<group>"; };
 		2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoloBattleViewController.swift; sourceTree = "<group>"; };
-		2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOpponentViewController.swift; sourceTree = "<group>"; };
 		2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBattleViewController.swift; sourceTree = "<group>"; };
 		2FF72D7620E6C0B800A800D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Ultracorps Battle Simulator 2/Base.lproj/iPhone.storyboard"; sourceTree = "<group>"; };
 		2FFC5C1E20E817F300F65C32 /* battleTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = battleTableCell.xib; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				2FF0B27920ADF70A0036F9EA /* Main.storyboard */,
 				2F9D473F20D43AEC007C377E /* Model.xcdatamodeld */,
 				2FF0B28F20AE41340036F9EA /* NetworkBattleViewController.swift */,
-				2FF0B28D20AE403C0036F9EA /* NetworkOpponentViewController.swift */,
 				2F02A84820D578E9003AC7AB /* README.rtf */,
 				2FF0B27720ADF70A0036F9EA /* SelectFleetViewController.swift */,
 				2FF0B28B20AE31FC0036F9EA /* SoloBattleViewController.swift */,
@@ -193,7 +190,6 @@
 				2FF0B27820ADF70A0036F9EA /* SelectFleetViewController.swift in Sources */,
 				2F9D474820D43CAE007C377E /* CoreDataFleet+CoreDataClass.swift in Sources */,
 				2FF0B27420ADF70A0036F9EA /* AppDelegate.swift in Sources */,
-				2FF0B28E20AE403C0036F9EA /* NetworkOpponentViewController.swift in Sources */,
 				2FA7685B20B36EF0006EA163 /* fleets.swift in Sources */,
 				2FF0B28A20AE31350036F9EA /* EditFleetViewController.swift in Sources */,
 				2F9D474120D43AEC007C377E /* Model.xcdatamodeld in Sources */,

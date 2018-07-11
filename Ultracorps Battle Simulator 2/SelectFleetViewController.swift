@@ -122,7 +122,7 @@ class SelectFleetViewController: UIViewController, UIPickerViewDataSource, UIPic
     
     func pickerView(_ fleetPicker: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if row < fleets.count {
-            return fleets[row].name
+            return "Fleet Name: \(fleets[row].name)   Firepower: \(fleets[row].totalFP)"
         } else {
             return "Add New Fleet"
         }

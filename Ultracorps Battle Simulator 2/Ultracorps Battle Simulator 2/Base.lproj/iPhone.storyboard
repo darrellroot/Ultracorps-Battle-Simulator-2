@@ -163,6 +163,7 @@ aWVlbWVyaXR1c0BnbWFpbC5jb20
                             <constraint firstItem="Orv-bL-bDN" firstAttribute="top" secondItem="qLv-4r-QnS" secondAttribute="bottom" constant="10" id="Jh5-Ld-IFf"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="u2q-OQ-PGU" secondAttribute="trailing" constant="10" id="NZn-6S-dXv"/>
                             <constraint firstItem="aMK-ZC-QWT" firstAttribute="top" secondItem="u2q-OQ-PGU" secondAttribute="bottom" constant="20" id="RY8-9w-xzp"/>
+                            <constraint firstItem="aMK-ZC-QWT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="R6i-Xp-4Nj" secondAttribute="trailing" constant="10" id="Yb9-s5-vPo"/>
                             <constraint firstItem="R6i-Xp-4Nj" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="10" id="aGi-9K-TQI"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="Orv-bL-bDN" secondAttribute="trailing" constant="10" id="ce8-US-hop"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="aMK-ZC-QWT" secondAttribute="trailing" constant="10" id="ell-fP-pA7"/>
@@ -211,7 +212,7 @@ aWVlbWVyaXR1c0BnbWFpbC5jb20
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="21.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="301-1w-4ki">
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="300" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="301-1w-4ki">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -412,6 +413,7 @@ aWVlbWVyaXR1c0BnbWFpbC5jb20
                             <constraint firstItem="wcV-67-045" firstAttribute="top" secondItem="S8U-De-SiS" secondAttribute="top" constant="10" id="2Dd-kD-T1s"/>
                             <constraint firstItem="S8U-De-SiS" firstAttribute="trailing" secondItem="VmU-o9-krD" secondAttribute="trailing" id="3u3-Qp-Gd1"/>
                             <constraint firstItem="S8U-De-SiS" firstAttribute="trailing" secondItem="EJO-Ap-6VI" secondAttribute="trailing" constant="10" id="5xb-GU-xp3"/>
+                            <constraint firstItem="EJO-Ap-6VI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="puD-Tx-ks2" secondAttribute="trailing" constant="10" id="8z8-re-QJG"/>
                             <constraint firstItem="iFt-TU-Rcy" firstAttribute="top" secondItem="ouF-W1-tdN" secondAttribute="bottom" constant="10" id="F1R-Ow-jkA"/>
                             <constraint firstItem="puD-Tx-ks2" firstAttribute="bottom" secondItem="iFt-TU-Rcy" secondAttribute="bottom" id="MYA-2q-CYn"/>
                             <constraint firstItem="cKc-dW-db2" firstAttribute="top" secondItem="S8U-De-SiS" secondAttribute="top" constant="10" id="N6m-2x-7iN"/>

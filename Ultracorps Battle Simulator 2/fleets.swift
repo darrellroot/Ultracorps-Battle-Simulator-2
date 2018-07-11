@@ -79,7 +79,13 @@ func saveData() {
     }
 }
 
-struct fleet {
+struct BattleUpdate: Codable {
+    var fleet: fleet
+    var round: Int
+    var hits: Int
+}
+
+struct fleet: Codable {
     var name: String = "New Fleet"
     var quantities = [Int]()
     var survivors = [Int]()
