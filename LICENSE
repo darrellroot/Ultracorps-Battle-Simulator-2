@@ -1,0 +1,39 @@
+UltraCorps is copyright © 1998-2002, 2005-(present year) by Steve Jackson Games.
+UltraCorps is a trademark of Steve Jackson Games, which reserves all rights.
+This program was created and distributed by permission of Steve Jackson Games.
+Conquest is Job One
+
+You may use the source code in this repository as you wish provided you comply with Steve Jackson Game restrictions
+related to Ultracorps documented at http://ultracorps.sjgames.com/help/help.html?topic=64
+
+Here's the content as of June 2023:
+
+Player-Created Programs
+
+Many players have coding skills and are interested in creating programs to help them play UltraCorps. There's a long tradition, going all the back to the VR-1 days, of player-designed "battle simulators" and custom universe maps.
+We are all in favor of this, provided you:
+
+Don't Spider Our Site!
+
+Use of any program that automatically gathers information from the game site is strictly forbidden. It's possible that such a program might give the operator an unfair advantage. Whether that happened or not, it would definitely use up server cycles and bandwidth, and slow the game down for everybody else.
+
+The only reason someone might consider spidering would be to try to look at every world, every turn, without clicking personally. Not legal!
+
+For those interested in creating star maps, battle calculators, economic analyzers, and so on, all games except solos automatically export two kinds of .csv (comma separated values) files. Players are welcome to take this information and pour it into their own analyzers.
+
+At the bottom of each game's Units page is a link to a file with current unit data. If you access the units help from outside a game (for instance, from the lobby) you will see the units data for the most recent game you looked at. The units.csv file contains comma-separated data from the most recent tick, with the following fields:
+#Name,FP,Max,OF,DF,AT,PD,CA,Speed,CPX,Start Price,Current Price,License Price
+
+At the bottom of each game's Show All Worlds page is a link to worlds.csv, a file with current map data. In a pub game it's just a single link; in a mega, it's a link to the data for each turn of the game. The worlds.csv file contains comma-separated data with the following fields:
+#worldID,name,x,y,EI,RER,ownerID,ownerName,ownerRace,class,population,ultranium,visible_fp
+
+Note that this gives only the generally available info on each world. ownerRace is a number (corresponds to our race id numbers) and "class" is either "homeworld" or "nobody". A world's class never changes, even if a homeworld is captured.
+
+Help Us Protect Our Trademark and Copyright!
+
+Whether or not you ever intend to show your program to another living soul:
+Please don't copy the text of any help files or other material, except for the CSV files which are intended for that use, into programs.
+Please include the following note in any program you create: "UltraCorps is copyright © 1998-2002, 2005-(present year) by Steve Jackson Games. UltraCorps is a trademark of Steve Jackson Games, which reserves all rights. This program was created and distributed by permission of Steve Jackson Games. Conquest is Job One!"
+Share, Please!
+
+We do not REQUIRE you to share your work with others, but we encourage it. If you come up with a great new battle calculator or other game aid that you would like to share, let us know. We would like to offer such programs for download, if and when players come up with really effective ones.
